@@ -4,7 +4,7 @@ import mongoose from "mongoose";
 import dotenv from "dotenv";
 import jwt from "jsonwebtoken";
 import bcrypt from "bcryptjs";
-import authRoutes from './auth.route.js';
+import authRoutes from './routes/auth.route.js'; 
 import examRoutes from './exam.route.js';
 import userRoutes from "./routes/user.routes.js";
 import connectDB from "./config/db.js";
