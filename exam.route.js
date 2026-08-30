@@ -1,5 +1,5 @@
 import express from "express";
-import { startExam, submitExam, examStatus } from "../controllers/exam.controller.js";
+import { startExam, submitExam, examStatus } from "./exam.controller.js";
 import authMiddleware from "../middlewares/auth.middleware.js";
 
 const router = express.Router();
