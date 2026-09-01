@@ -1,4 +1,4 @@
-import Exam from "../models/Exam.js";
+import Exam from "../models/exam.model.js";
 
 /**
  * CREATE EXAM
