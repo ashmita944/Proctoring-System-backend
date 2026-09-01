@@ -4,11 +4,10 @@ import mongoose from "mongoose";
 import dotenv from "dotenv";
 import jwt from "jsonwebtoken";
 import bcrypt from "bcryptjs";
-import authRoutes from "./auth.routes.js";
-import examRoutes from "./exam.routes.js";
-import userRoutes from "./user.routes.js";
-import connectDB from "./db.js";
-
+import authRoutes from "./routes/auth.routes.js";
+import examRoutes from "./routes/exam.route.js";
+import userRoutes from "./routes/user.route.js";
+import connectDB from "./config/db.js";
 dotenv.config();
 const app = express();
 app.use(express.json());
