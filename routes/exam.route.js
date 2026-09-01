@@ -1,16 +1,13 @@
 import express from "express";
-import { startExam, submitExam, examStatus } from "../controllers/exam.controller.js";
+import { createExam, getAllExams } from "../controllers/exam.controller.js";
 import authMiddleware from "../middleware/auth.middleware.js";
 
 const router = express.Router();
 
-// start exam
-router.post("/start", authMiddleware, startExam);
+// Create Exam Route
+router.post("/create", authMiddleware, createExam);
 
-// submit exam
-router.post("/submit", authMiddleware, submitExam);
+// Get All Exams Route
+router.get("/all", authMiddleware, getAllExams);
 
-// exam status
-router.get("/status", authMiddleware, examStatus);
-
-export default router
+export default router;
