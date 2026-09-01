@@ -7,7 +7,7 @@ import bcrypt from "bcryptjs";
 import authRoutes from "./routes/auth.routes.js";
 import examRoutes from "./routes/exam.route.js";
 import userRoutes from "./routes/user.route.js";
-import connectDB from "./config/db.js";
+import { connectDB } from "./config/db.js";
 dotenv.config();
 const app = express();
 app.use(express.json());
