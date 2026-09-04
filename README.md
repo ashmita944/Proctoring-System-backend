@@ -3,14 +3,15 @@ Proctoring System Backend
 This is a backend application for an online proctoring system.  
 It handles authentication, authorization, and exam-related APIs using a clean and modular backend architecture.
 
-Tech Stack
-- Node.js
-- Express.js
-- MongoDB
-- JWT (JSON Web Token)
-- Mongoose
+Live Backend API: https://proctoring-backend-v2.onrender.com
 
-Features
+Tech Stack
+- Runtime & Framework:Node.js, Express.js
+- Database:MongoDB Atlas (Mongoose ORM)
+- Authentication:JWT (JSON Web Tokens), Bcrypt.js
+- Hosting & Cloud:Render
+
+  Features
 - User registration and login
 - Password hashing using bcrypt
 - JWT-based authentication
